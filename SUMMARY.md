@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [介绍](README.md)
 * [php 开发环境安装](chapters/1.md)
 * [跑 laravel 的 hello world](chapters/2.md)
 * [第一个路由 UsersController](chapters/3.md)
