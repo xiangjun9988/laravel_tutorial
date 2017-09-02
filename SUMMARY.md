@@ -16,6 +16,6 @@
 * [13. factories, faker and seeding](chapters/13.md)
 * [14. Blade foreach](chapters/14.md)
 
-* [其他]()
-  * [VIM 的 laravel 插件](chapters/laravel_vim.md)
-  * [VIM 中有效地查看 php 源码](chapters/laravel_code_vim.md)
+### 其他
+* [VIM 的 laravel 插件](chapters/laravel_vim.md)
+* [VIM 中有效地查看 php 源码](chapters/laravel_code_vim.md)
