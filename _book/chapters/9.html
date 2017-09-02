@@ -1,0 +1,431 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>在 view 中共享变量 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.html" />
+    
+    
+    <link rel="prev" href="8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    php 开发环境安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    跑 laravel 的 hello world
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    第一个路由 UsersController
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    在数据库中创建一条数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    简单的用户认证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    修改 User model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    User model 的 getter 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    view 的更多知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    在 view 中共享变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    blade layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11.html">
+            
+                <a href="11.html">
+            
+                    
+                    使用 @include 来整理 view
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="12.html">
+            
+                <a href="12.html">
+            
+                    
+                    Blade if/else/unless/or
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13.html">
+            
+                <a href="13.html">
+            
+                    
+                    factories, faker and seeding
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >在 view 中共享变量</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x4ECE;&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;<a href="https://www.rails365.net/articles/ruby-cheng-xu-yuan-xue-xi-laravel-kuang-jia-bi-ji-8-view-geng-duo-zhi-shi" target="_blank">Ruby &#x7A0B;&#x5E8F;&#x5458;&#x5B66;&#x4E60; laravel &#x6846;&#x67B6;&#x7B14;&#x8BB0; (8)-view &#x7684;&#x66F4;&#x591A;&#x77E5;&#x8BC6;</a>&#x5E94;&#x8BE5;&#x5B66;&#x4F1A;&#x4E86;&#x5728;&#x5982;&#x4F55;&#x4F20;&#x9012;&#x53D8;&#x91CF;&#x7ED9;view&#x3002;</p>
+<p>&#x8FD9;&#x4E00;&#x7BC7;&#x6765;&#x8BF4;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x5728;&#x5404;&#x79CD;view&#x4E2D;&#x5171;&#x4EAB;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x7F16;&#x8F91;<code>app/Providers/AppServiceProvider.php</code>&#x6587;&#x4EF6;&#xFF0C;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-php"><span class="hljs-comment">// app/Providers/AppServiceProvider.php</span>
+
+<span class="hljs-meta">&lt;?php</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Providers</span>;
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">Illuminate</span>\<span class="hljs-title">Support</span>\<span class="hljs-title">ServiceProvider</span>;
+
+<span class="hljs-comment">// &#x4E0B;&#x9762;&#x8FD9;&#x4E00;&#x884C;&#x662F;&#x65B0;&#x589E;&#x7684;&#x3002;</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">View</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AppServiceProvider</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">ServiceProvider</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">boot</span><span class="hljs-params">()</span>
+    </span>{
+        View::share(<span class="hljs-string">&apos;myname&apos;</span>, <span class="hljs-string">&apos;Renato&apos;</span>);
+    }
+
+    ...
+}
+</code></pre>
+<p>&#x770B;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x5728;<code>boot</code>&#x51FD;&#x6570;&#x4E0B;&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x884C;<code>View::share(&apos;myname&apos;, &apos;Renato&apos;);</code>&#xFF0C;&#x8868;&#x793A;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;<code>myname</code>&#xFF0C;&#x5176;&#x503C;&#x4E3A;<code>Renato</code>&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x7ED9;&#x4EFB;&#x4F55;view&#x4E86;&#xFF0C;&#x53EA;&#x8981;&#x5728;view&#x5F15;&#x7528;<code>$myname</code>&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x8FD8;&#x4E0D;&#x4F1A;&#xFF0C;&#x90A3;&#x5C31;&#x770B;&#x770B;&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x5B8C;&#x7ED3;&#x3002;</p>
+<p>&#x4E0B;&#x4E00;&#x7BC7;&#xFF1A;<a href="https://www.rails365.net/articles/ruby-cheng-xu-yuan-xue-xi-laravel-kuang-jia-bi-ji-10-blade" target="_blank">Ruby &#x7A0B;&#x5E8F;&#x5458;&#x5B66;&#x4E60; laravel &#x6846;&#x67B6;&#x7B14;&#x8BB0; (10)-blade layout</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8.html" class="navigation navigation-prev " aria-label="Previous page: view 的更多知识">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.html" class="navigation navigation-next " aria-label="Next page: blade layout">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"在 view 中共享变量","level":"1.10","depth":1,"next":{"title":"blade layout","level":"1.11","depth":1,"path":"chapters/10.md","ref":"chapters/10.md","articles":[]},"previous":{"title":"view 的更多知识","level":"1.9","depth":1,"path":"chapters/8.md","ref":"chapters/8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/9.md","mtime":"2017-09-02T01:55:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-02T01:57:53.635Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
