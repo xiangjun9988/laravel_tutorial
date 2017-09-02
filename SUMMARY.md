@@ -1,6 +1,6 @@
 # Summary
 
-* [介绍](README.md)
+* [0. 介绍](README.md)
 * [1. php 开发环境安装](chapters/1.md)
 * [2. 跑 laravel 的 hello world](chapters/2.md)
 * [3. 第一个路由 UsersController](chapters/3.md)
@@ -15,3 +15,7 @@
 * [12. Blade if/else/unless/or](chapters/12.md)
 * [13. factories, faker and seeding](chapters/13.md)
 * [14. Blade foreach](chapters/14.md)
+
+* [其他]()
+  * [VIM 的 laravel 插件](chapters/laravel_vim.md)
+  * [VIM 中有效地查看 php 源码](chapters/laravel_code_vim.md)
