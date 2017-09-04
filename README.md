@@ -2,6 +2,8 @@
 
 本教程是从ruby的视脚来学习laravel这个神奇的php框架，适用于ruby程序员和php程序员浏览。
 
+写这本教程我使用的laravel版本是5.3，新的版本也应该能适用。
+
 原文发布于我的个人博客：https://www.rails365.net
 
 源码位于：https://github.com/yinsigan/laravel_tutorial
