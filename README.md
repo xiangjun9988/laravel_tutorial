@@ -8,6 +8,8 @@
 
 源码位于：https://github.com/yinsigan/laravel_tutorial
 
+电子版: [PDF](https://www.gitbook.com/download/pdf/book/yinsigan/laravel_tutorial) [Mobi](https://www.gitbook.com/download/mobi/book/yinsigan/laravel_tutorial) [ePbu](https://www.gitbook.com/download/epub/book/yinsigan/laravel_tutorial)
+
 ### 联系我:
 
 email: hfpp2012@gmail.com
