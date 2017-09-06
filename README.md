@@ -1,8 +1,8 @@
 # Ruby 程序员学习 laravel 框架笔记
 
-本教程是从ruby的视脚来学习laravel这个神奇的php框架，适用于ruby程序员和php程序员浏览。
+本教程是从 ruby 的视脚来学习 laravel 这个神奇的 php 框架，适用于 ruby 程序员和 php 程序员浏览。
 
-写这本教程我使用的laravel版本是5.3，新的版本也应该能适用。
+写这本教程我使用的 laravel 版本是 5.3，新的版本也应该能适用。
 
 原文发布于我的个人博客：https://www.rails365.net
 
