@@ -15,6 +15,7 @@
 * [12. Blade if/else/unless/or](chapters/12.md)
 * [13. factories, faker and seeding](chapters/13.md)
 * [14. Blade foreach](chapters/14.md)
+* [15. 分页](chapters/15.md)
 
 ### 其他
 * [VIM 的 laravel 插件](chapters/laravel_vim.md)
