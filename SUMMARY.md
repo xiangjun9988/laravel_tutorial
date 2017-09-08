@@ -19,6 +19,7 @@
 * [16. 用中间件来限制用户必须登录](chapters/16.md)
 * [17. Route group](chapters/17.md)
 * [18. CURD 实践之改变用户表结构](chapters/18.md)
+* [19. CURD 实践之为新添加的属性修改注册功能](chapters/19.md)
 
 ### 其他
 * [VIM 的 laravel 插件](chapters/laravel_vim.md)
