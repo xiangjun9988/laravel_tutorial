@@ -20,6 +20,7 @@
 * [17. Route group](chapters/17.md)
 * [18. CURD 实践之改变用户表结构](chapters/18.md)
 * [19. CURD 实践之为新添加的属性修改注册功能](chapters/19.md)
+* [20. CURD 实践之用 username 来代替 email 登录](chapters/20.md)
 
 ### 其他
 * [VIM 的 laravel 插件](chapters/laravel_vim.md)
